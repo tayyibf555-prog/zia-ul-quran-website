@@ -8,7 +8,7 @@ const Hero = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary-900">
+        <section id="home" className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-primary-900">
             {/* Background Pattern */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-[url('/hero-pattern.jpg')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
