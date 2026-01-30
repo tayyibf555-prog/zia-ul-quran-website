@@ -26,36 +26,36 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="space-y-4 pt-12"
+                        className="space-y-3 pt-4 md:pt-12"
                     >
                         {/* Gold Gradient Title - Poppins Bold */}
                         <h1
-                            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold py-2 leading-normal text-gold-gradient whitespace-nowrap"
+                            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold py-2 leading-tight md:leading-normal text-gold-gradient whitespace-nowrap"
                             style={{ fontFamily: "'Poppins', sans-serif" }}
                         >
                             Young Minds Gather - Purpose Awakens
                         </h1>
                         {/* White Subtitle */}
-                        <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-sm sm:text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-snug md:leading-relaxed px-4">
                             To grow with understanding, resilience and purposeful intention.
                         </p>
                     </motion.div>
 
                     {/* Buttons Row */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                    <div className="flex flex-col sm:flex-row gap-3 pt-2 md:pt-4 justify-center items-center">
                         {/* Ramadan 2026 Button - Dark with gold dot */}
                         <Link
                             to="/ramadan"
-                            className="bg-primary-900/60 backdrop-blur-md text-white border border-white/20 px-8 py-3 rounded-full font-semibold text-base hover:bg-primary-900/80 hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2 group"
+                            className="bg-primary-900/60 backdrop-blur-md text-white border border-white/20 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold text-sm md:text-base hover:bg-primary-900/80 hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2 group"
                         >
-                            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse group-hover:bg-amber-300"></span>
+                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-amber-400 animate-pulse group-hover:bg-amber-300"></span>
                             Ramadan 2026
                         </Link>
                         {/* Prayer Times Button - White */}
                         <NavHashLink
                             smooth
                             to="/#prayer-times"
-                            className="bg-white text-primary-800 px-8 py-3 rounded-full font-semibold text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center"
+                            className="bg-white text-primary-800 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold text-sm md:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center"
                         >
                             {t('nav.prayer')}
                         </NavHashLink>
@@ -64,7 +64,7 @@ const Hero = () => {
                             href="https://donate.justgiving.com/charity/ziaulquran/donation-amount"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-gold-gradient text-white px-8 py-3 rounded-full font-bold text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center shadow-lg shadow-amber-900/30"
+                            className="bg-gold-gradient text-white px-6 py-2 md:px-8 md:py-3 rounded-full font-bold text-sm md:text-base hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center shadow-lg shadow-amber-900/30"
                         >
                             {t('nav.donate')}
                         </a>
@@ -75,7 +75,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="text-white/80 text-2xl md:text-3xl pt-6"
+                        className="text-white/80 text-xl md:text-3xl pt-4 md:pt-6"
                         style={{ fontFamily: "'Amiri', serif", fontWeight: 400 }}
                     >
                         السلام عليكم ورحمة الله وبركاته
