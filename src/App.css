@@ -1,0 +1,64 @@
+/* App specific styles */
+:root {
+  --theme-bg: #f9f6f0;
+  --theme-text: #1c1917;
+}
+
+.theme-day {
+  --theme-bg: #fafaf9;
+}
+
+.theme-golden {
+  --theme-bg: #fffbeb;
+  filter: sepia(0.1) saturate(1.1);
+}
+
+.theme-night {
+  --theme-bg: #0c0a09;
+  --theme-text: #fafaf9;
+  filter: contrast(0.9) brightness(0.85);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition: filter 2s ease-in-out, background-color 2s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  20% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  animation: shine 4s infinite;
+  animation-delay: 1.5s;
+  pointer-events: none;
+  z-index: 10;
+}
