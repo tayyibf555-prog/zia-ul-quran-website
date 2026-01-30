@@ -31,10 +31,12 @@ const Hero = () => {
                     >
                         {/* Gold Gradient Title - Poppins Bold */}
                         <h1
-                            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold py-2 leading-tight md:leading-normal text-gold-gradient whitespace-nowrap"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold py-2 leading-tight md:leading-normal text-gold-gradient"
                             style={{ fontFamily: "'Poppins', sans-serif" }}
                         >
-                            Young Minds Gather - Purpose Awakens
+                            <span className="block md:inline">Young Minds Gather</span>
+                            <span className="hidden md:inline"> - </span>
+                            <span className="block md:inline">Purpose Awakens</span>
                         </h1>
                         {/* White Subtitle */}
                         <p className="text-sm sm:text-base md:text-xl text-white/90 max-w-3xl mx-auto leading-snug md:leading-relaxed px-4">
