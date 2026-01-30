@@ -29,15 +29,15 @@ const Preloader = ({ onComplete }) => {
                     <img
                         src="/loading-logo.jpg"
                         alt="Zia-ul-Quran Loading Logo"
-                        className="h-24 w-auto mix-blend-multiply rounded-full"
+                        className="h-16 md:h-24 w-auto mix-blend-multiply rounded-full"
                     />
                 </motion.div>
 
                 {/* Text animating out from behind (Left to Right) - Lower Z-index */}
                 {/* Negative margin to pull it close, padding to push text away from edge */}
-                <div className="overflow-hidden relative z-10 -ml-4 pl-8">
+                <div className="overflow-hidden relative z-10 -ml-4 pl-6 md:pl-8">
                     <motion.h1
-                        className="text-4xl md:text-5xl font-bold text-white whitespace-nowrap"
+                        className="text-2xl md:text-5xl font-bold text-white whitespace-nowrap"
                         style={{ fontFamily: "'Poppins', sans-serif" }}
                         initial={{ x: "-100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
