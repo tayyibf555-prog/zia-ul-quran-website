@@ -110,6 +110,15 @@ const TopBar = () => {
                         <Clock size={12} className="text-accent-500" />
                         Next Prayer: <span className="text-white">{nextPrayer.name} in {timeLeft || '...'}</span>
                     </div>
+                    <div className="flex items-center gap-2">
+                        <span className="text-accent-500 font-bold">
+                            {new Intl.DateTimeFormat('en-GB-u-ca-islamic', {
+                                day: 'numeric',
+                                month: 'long',
+                                year: 'numeric'
+                            }).format(new Date(Date.now() - ((new Date().getHours() >= 18) ? 0 : 24 * 60 * 60 * 1000)))}
+                        </span>
+                    </div>
                     <div className="hidden sm:flex items-center gap-2">
                         <MapPin size={12} className="text-accent-500" />
                         Glasgow, Scotland
