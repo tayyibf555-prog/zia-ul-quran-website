@@ -59,12 +59,12 @@ const News = () => {
                             className="group flex flex-col bg-neutral-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-neutral-100"
                         >
                             {/* News Image/Thumb */}
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative h-64 overflow-hidden">
                                 <img
                                     src={item.image}
                                     alt={item.title}
                                     loading="lazy"
-                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 opacity-80"
+                                    className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-500 opacity-80"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent"></div>
                                 <div className="absolute bottom-4 left-4 flex items-center text-white text-sm font-medium">
