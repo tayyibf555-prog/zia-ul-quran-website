@@ -42,13 +42,13 @@ const Services = () => {
         {
             title: 'Outreach and Interfaith Initiatives',
             description: "We're committed to interfaith work and love exploring big questions with Muslims and non-Muslims alike. Fancy a cup of tea and a good conversation? Get in touch!",
-            image: '/outreach-poster.png',
+            image: '/outreach-poster-v3.png',
             theme: 'green'
         },
         {
             title: 'Counselling & Therapy',
             description: "We offer compassionate, faith-sensitive counselling for individuals, couples, and families. Whether you're facing mental health struggles, relationship challenges, or personal growth hurdles, our expert therapists provide confidential support.",
-            image: '/counselling-poster.png',
+            image: '/counselling-poster-v3.png',
             theme: 'gold',
             link: {
                 text: 'Find out more',
