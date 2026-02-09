@@ -10,16 +10,19 @@ const Services = () => {
         {
             title: 'Madrassa',
             description: "Helping kids learn to read the Qur'an with confidence, understand Islamic teachings, and build good character, all in a fun and supportive environment!",
+            image: '/madrassa-poster.png',
             theme: 'green'
         },
         {
             title: 'Shahadah Services',
             description: "We've had the honour of welcoming many new Muslims over the years! We provide a personalised shahadah experience, a bespoke certificate to mark the special moment, and ongoing support to help you on your journey.",
+            image: '/shahadah-poster.png',
             theme: 'gold'
         },
         {
             title: 'iSyllabus for Schools',
             description: "Zia-Ul-Quran is pleased to offer the award winning iSyllabus for Schools programme, a bespoke, 5 year Islamic Studies curriculum for ages 10–16. Developed by experienced scholars and educators, it blends the rigour of traditional learning with the needs of modern society.",
+            image: '/isyllabus-poster.png',
             theme: 'green',
             link: {
                 text: 'Sign up here',
@@ -29,6 +32,7 @@ const Services = () => {
         {
             title: 'Nikah (Marriage Services)',
             description: "Shaykh Hassan Rabbani is in high demand for Nikah ceremonies, delivering a heartfelt and meaningful speech to mark this special occasion. We provide a bespoke Nikah certificate and officiate marriages for Muslims from diverse backgrounds.",
+            image: '/nikah-poster.png',
             theme: 'gold',
             link: {
                 text: 'Sign up here',
@@ -38,11 +42,13 @@ const Services = () => {
         {
             title: 'Outreach and Interfaith Initiatives',
             description: "We're committed to interfaith work and love exploring big questions with Muslims and non-Muslims alike. Fancy a cup of tea and a good conversation? Get in touch!",
+            image: '/outreach-poster.png',
             theme: 'green'
         },
         {
             title: 'Counselling & Therapy',
             description: "We offer compassionate, faith-sensitive counselling for individuals, couples, and families. Whether you're facing mental health struggles, relationship challenges, or personal growth hurdles, our expert therapists provide confidential support.",
+            image: '/counselling-poster.png',
             theme: 'gold',
             link: {
                 text: 'Find out more',
@@ -70,19 +76,6 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => {
-                        const isGreen = service.theme === 'green';
-
-                        // Defined styles based on Hero implementation
-                        // Green: primary-900 base (matches hero)
-                        // Gold: premium amber gold (matches hero heading)
-                        const baseColorClass = isGreen ? 'bg-primary-900' : 'bg-amber-500';
-
-                        // Gradient overlays
-                        // Gradient overlays - Reduced opacity to let pattern show through
-                        const gradientOverlayClass = isGreen
-                            ? 'bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80'
-                            : 'bg-gradient-to-br from-amber-600/90 via-yellow-400/80 to-amber-500/90';
-
                         return (
                             <motion.div
                                 key={service.title}
@@ -101,23 +94,20 @@ const Services = () => {
                                     }
                                 }}
                                 whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-                                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full"
+                                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full group"
                             >
-                                {/* Header with Hero Pattern */}
-                                <div className={`relative h-24 overflow-hidden ${baseColorClass} ${isInView ? 'shine-effect' : ''}`}>
-                                    {/* Pattern Layer */}
-                                    <div className="absolute inset-0 z-0">
-                                        <div
-                                            className="absolute inset-0 bg-cover bg-center opacity-70 mix-blend-overlay"
-                                            style={{ backgroundImage: "url('/hero-pattern.jpg')" }}
-                                        ></div>
-                                        {/* Gradient Overlay - Reduced opacity to show pattern */}
-                                        <div className={`absolute inset-0 ${gradientOverlayClass}`}></div>
-                                    </div>
+                                {/* Header with Image Poster */}
+                                <div className="h-48 overflow-hidden relative">
+                                    <img
+                                        src={service.image}
+                                        alt={service.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
                                 </div>
 
                                 <div className="p-6 flex-grow flex flex-col">
-                                    <h3 className="text-xl font-display font-bold text-primary-600 mb-3">
+                                    <h3 className="text-xl font-display font-bold text-primary-900 mb-3 group-hover:text-primary-600 transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-neutral-600 leading-relaxed flex-grow mb-4">
@@ -130,10 +120,10 @@ const Services = () => {
                                                 href={service.link.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center text-accent-600 font-bold hover:text-accent-700 transition-colors group text-sm"
+                                                className="inline-flex items-center text-accent-600 font-bold hover:text-accent-700 transition-colors group/btn text-sm"
                                             >
                                                 {service.link.text}
-                                                <ExternalLink className="w-4 h-4 ml-1.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                                                <ExternalLink className="w-4 h-4 ml-1.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                                             </a>
                                         </div>
                                     )}
