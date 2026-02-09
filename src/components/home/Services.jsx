@@ -32,7 +32,7 @@ const Services = () => {
         {
             title: 'Nikah (Marriage Services)',
             description: "Shaykh Hassan Rabbani is in high demand for Nikah ceremonies, delivering a heartfelt and meaningful speech to mark this special occasion. We provide a bespoke Nikah certificate and officiate marriages for Muslims from diverse backgrounds.",
-            image: '/nikah-poster.png',
+            image: '/nikah-poster-v2.png',
             theme: 'gold',
             link: {
                 text: 'Sign up here',
