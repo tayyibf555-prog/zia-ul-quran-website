@@ -82,8 +82,16 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-primary-700/50 mt-12 pt-8 text-center text-primary-300 text-xs">
-                    <p>&copy; {currentYear} Jamia Zia-ul-Quran. All rights reserved.</p>
+                <div className="border-t border-primary-700/50 mt-12 pt-8 flex flex-col items-center gap-4 text-center text-primary-300 text-xs">
+                    <p>Powered by Azen AI</p>
+                    <a
+                        href="https://www.azendigital.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-primary-800/50 border border-primary-600 rounded-lg hover:bg-primary-700 hover:border-accent-500/50 hover:text-accent-400 transition-all duration-300"
+                    >
+                        Visit Azen Digital
+                    </a>
                 </div>
             </div>
         </footer>

@@ -72,19 +72,10 @@ const Hero = () => {
                             {t('nav.donate')}
                         </a>
                     </div>
-
-                    {/* Arabic Salaam */}
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.8 }}
-                        className="text-white/80 text-xl md:text-3xl pt-4 md:pt-6"
-                        style={{ fontFamily: "'Amiri', serif", fontWeight: 400 }}
-                    >
-                        السلام عليكم ورحمة الله وبركاته
-                    </motion.p>
                 </motion.div>
-            </div>
+
+
+            </div >
 
             <motion.div
                 animate={{ y: [0, 10, 0] }}
@@ -93,7 +84,7 @@ const Hero = () => {
             >
                 <ChevronDown className="text-white/70" size={32} />
             </motion.div>
-        </section>
+        </section >
     );
 };
 
