@@ -22,7 +22,7 @@ const Services = () => {
         {
             title: 'iSyllabus for Schools',
             description: "Zia-Ul-Quran is pleased to offer the award winning iSyllabus for Schools programme, a bespoke, 5 year Islamic Studies curriculum for ages 10–16. Developed by experienced scholars and educators, it blends the rigour of traditional learning with the needs of modern society.",
-            image: '/isyllabus-poster.png',
+            image: '/isyllabus-poster-v3.png',
             theme: 'green',
             link: {
                 text: 'Sign up here',
