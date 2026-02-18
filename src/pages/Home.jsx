@@ -2,6 +2,7 @@ import Hero from '../components/home/Hero'
 import PrayerTimes from '../components/home/PrayerTimes'
 import About from '../components/home/About'
 import Services from '../components/home/Services'
+import WomensTafsir from '../components/home/WomensTafsir'
 import ProjectTimeline from '../components/home/ProjectTimeline'
 import News from '../components/home/News'
 import Events from '../components/home/Events'
@@ -17,6 +18,7 @@ const Home = () => {
             <PrayerTimes />
             <About />
             <Services />
+            <WomensTafsir />
             <ProjectTimeline />
             <News />
             <Events />

@@ -107,10 +107,6 @@ const TopBar = () => {
             <div className="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-4 text-[10px] font-display font-bold uppercase tracking-widest text-primary-300">
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-2">
-                        <Clock size={12} className="text-accent-500" />
-                        Next Prayer: <span className="text-white">{nextPrayer.name} in {timeLeft || '...'}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
                         <span className="text-accent-500 font-bold">
                             {new Intl.DateTimeFormat('en-GB-u-ca-islamic', {
                                 day: 'numeric',
@@ -137,6 +133,12 @@ const TopBar = () => {
 
             {/* Ayah Row */}
             <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 text-center">
+                {/* Next Prayer Display - Centered */}
+                <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest text-white mb-3">
+                    <Clock size={14} className="text-accent-500" />
+                    Next Prayer: <span className="text-accent-400 mx-1">{nextPrayer.name}</span> in <span className="text-white ml-1">{timeLeft || '...'}</span>
+                </div>
+
                 {loading ? (
                     <div className="flex items-center justify-center gap-2 text-xs text-primary-200 uppercase tracking-widest">
                         <Loader2 className="animate-spin" size={12} />

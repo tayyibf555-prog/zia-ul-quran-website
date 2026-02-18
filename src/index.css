@@ -52,4 +52,8 @@
   .bg-gold-gradient {
     background: linear-gradient(135deg, #CA8A04 0%, #EAB308 50%, #CA8A04 100%);
   }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif !important;
+  }
 }

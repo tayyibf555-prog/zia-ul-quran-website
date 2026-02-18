@@ -9,88 +9,92 @@ const About = () => {
 
     const values = [
         {
-            icon: BookOpen,
-            title: 'Knowledge',
-            description: 'Spreading Islamic education and understanding of the Quran'
+            icon: Landmark,
+            title: 'Faith & Spiritual Growth',
+            description: 'Strengthening a lived connection to Allah through prayer, Qur’an, and reflection.'
         },
         {
-            icon: Users,
-            title: 'Community',
-            description: 'Building a strong, united Muslim community in Glasgow'
+            icon: BookOpen,
+            title: 'Learning & Development',
+            description: 'Providing engaging Islamic education and support for academic growth.'
         },
         {
             icon: Heart,
-            title: 'Compassion',
-            description: 'Serving with kindness and supporting those in need'
+            title: 'Youth & Family Wellbeing',
+            description: 'Creating safe, supportive spaces for children and families to thrive.'
         },
         {
-            icon: Landmark,
-            title: 'Worship',
-            description: 'Providing a welcoming space for prayer and reflection'
+            icon: Users,
+            title: 'Community & Belonging',
+            description: 'Fostering a welcoming, inclusive community across all generations.'
         }
     ];
 
     return (
         <section id="about" className="py-20 bg-white" ref={ref}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Left Column - Text Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-display font-bold text-gold-gradient mb-6">
-                            About <span className="text-accent-600">Zia-ul-Quran</span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-gold-gradient mb-6 font-playfair leading-tight">
+                            Welcome to Zia-ul-Quran Glasgow
                         </h2>
-                        <div className="space-y-4 text-neutral-700 text-lg leading-relaxed">
+                        <div className="space-y-6 text-neutral-700 text-lg leading-relaxed">
                             <p>
-                                Zia-ul-Quran Glasgow has been a pillar of faith and community service in Glasgow
-                                for many years. Our mission is to provide a welcoming environment for Muslims to
-                                worship, learn, and grow together.
+                                Zia-ul-Quran Glasgow is a welcoming mosque and community hub dedicated to faith, learning, and personal growth.
                             </p>
                             <p>
-                                We are dedicated to spreading the light of the Quran and the teachings of Islam
-                                through education, community programs, and spiritual guidance. Our doors are open
-                                to all seeking knowledge and connection.
+                                Alongside daily prayers and Islamic education, we are building a vibrant space for children, young people, and families to grow spiritually, develop strong character, and thrive in everyday life.
                             </p>
                             <p>
-                                From daily prayers to educational programs, community events, and support services,
-                                we strive to serve the needs of Muslims in Glasgow and beyond.
+                                From Qur’an and Islamic studies to youth activities, educational support, sports, and creative programmes, our aim is to make the mosque a positive, inspiring place to learn, belong, and grow.
                             </p>
                         </div>
                     </motion.div>
 
                     {/* Right Column - Values Grid */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 30 }}
-                        animate={isInView ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-                    >
-                        {values.map((value, index) => {
-                            const Icon = value.icon;
-                            return (
-                                <motion.div
-                                    key={value.title}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                                    className="bg-gradient-to-br from-primary-50 to-accent-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
-                                >
-                                    <div className="bg-white p-3 rounded-full w-fit mb-4">
-                                        <Icon className="w-6 h-6 text-primary-600" />
-                                    </div>
-                                    <h3 className="text-xl font-display font-bold text-primary-600 mb-2">
-                                        {value.title}
-                                    </h3>
-                                    <p className="text-neutral-600 text-sm">
-                                        {value.description}
-                                    </p>
-                                </motion.div>
-                            );
-                        })}
-                    </motion.div>
+                    <div className="flex flex-col gap-6">
+                        <motion.h3
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={isInView ? { opacity: 1, y: 0 } : {}}
+                            className="text-2xl font-display font-bold text-primary-900"
+                        >
+                            Our Core Pillars
+                        </motion.h3>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            animate={isInView ? { opacity: 1, x: 0 } : {}}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+                        >
+                            {values.map((value, index) => {
+                                const Icon = value.icon;
+                                return (
+                                    <motion.div
+                                        key={value.title}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                        transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                                        className="bg-gradient-to-br from-primary-50 to-accent-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 border border-primary-100/50"
+                                    >
+                                        <div className="bg-white p-3 rounded-full w-fit mb-4 shadow-sm">
+                                            <Icon className="w-6 h-6 text-primary-600" />
+                                        </div>
+                                        <h3 className="text-lg font-display font-bold text-primary-800 mb-2">
+                                            {value.title}
+                                        </h3>
+                                        <p className="text-neutral-600 text-sm leading-relaxed">
+                                            {value.description}
+                                        </p>
+                                    </motion.div>
+                                );
+                            })}
+                        </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

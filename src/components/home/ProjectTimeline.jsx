@@ -62,8 +62,9 @@ const ProjectTimeline = () => {
                     <h3 className="text-4xl md:text-5xl font-display font-bold text-gold-gradient mb-6">
                         Phases <span className="text-accent-500">to Come</span>
                     </h3>
-                    <p className="text-neutral-500 max-w-2xl mx-auto text-lg leading-relaxed">
-                        Investing in our future. Witness the evolution of Zia-ul-Quran as we transform our vision into a spiritual landmark.
+                    <p className="text-neutral-500 max-w-3xl mx-auto text-lg leading-relaxed">
+                        <span className="font-bold block mb-2 text-primary-800">Growing with purpose.</span>
+                        This roadmap sets out a thoughtful and realistic journey for Zia-ul-Quran — developing steadily into a joyful, welcoming spiritual and community hub. Each phase builds carefully on what is already in place, ensuring growth is sustainable, inclusive, and rooted in service.
                     </p>
                 </motion.div>
             </div>

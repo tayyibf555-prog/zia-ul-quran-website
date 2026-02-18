@@ -27,9 +27,9 @@ const Navbar = () => {
     return (
         <nav className="sticky top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-md">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-28">
+                <div className="flex items-center h-32 gap-8 md:gap-12">
                     {/* Logo Area */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 shrink-0">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5, x: -20 }}
                             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -39,7 +39,7 @@ const Navbar = () => {
                                 <img
                                     src="/logo.jpg"
                                     alt="Zia-ul-Quran"
-                                    className="h-20 w-auto mix-blend-multiply"
+                                    className="h-24 md:h-28 w-auto mix-blend-multiply"
                                 />
                             </Link>
                         </motion.div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center space-x-6">
+                    <div className="hidden md:flex items-center space-x-5 lg:space-x-8 flex-grow">
                         {navItems.map((item) => (
                             item.isLink ? (
                                 <Link
@@ -127,7 +127,7 @@ const Navbar = () => {
                     {/* Mobile menu button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden p-2 rounded-lg text-neutral-700 hover:bg-neutral-100"
+                        className="md:hidden p-2 rounded-lg text-neutral-700 hover:bg-neutral-100 ml-auto"
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

@@ -44,8 +44,8 @@ const News = () => {
                     <h2 className="text-4xl md:text-5xl font-display font-bold text-gold-gradient mb-4">
                         Our News
                     </h2>
-                    <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
-                        Stay updated with the latest announcements, events, and stories from Zia-ul-Quran
+                    <p className="text-neutral-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                        Stay connected with the latest updates, activities, and developments at Zia-ul-Quran Glasgow. From faith and learning to youth activities and community life, this is where you’ll find what’s happening and what’s coming next.
                     </p>
                 </motion.div>
 

@@ -455,7 +455,7 @@ const PrayerTimes = () => {
                                             className="text-[10px] text-neutral-500 uppercase font-bold tracking-[0.2em] mb-1"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                         >
-                                            Adhan
+                                            Start (Adhan)
                                         </p>
                                         <p
                                             className="text-xl font-bold text-neutral-900"
@@ -469,7 +469,7 @@ const PrayerTimes = () => {
                                             className="text-[10px] text-neutral-500 uppercase font-bold tracking-[0.2em] mb-1"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                         >
-                                            Iqamah
+                                            Jamaat (Iqamah)
                                         </p>
                                         <p
                                             className="text-2xl font-bold text-neutral-900"

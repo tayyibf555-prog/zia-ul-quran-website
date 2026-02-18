@@ -25,7 +25,8 @@ const Footer = () => {
                     <div className="space-y-4">
                         <Link to="/"><h3 className="font-display text-2xl font-bold text-accent-600">Zia-ul-Quran</h3></Link>
                         <p className="text-primary-100 text-sm leading-relaxed">
-                            {t('footer.about')}
+                            <span className="font-bold block mb-2 text-white">Zia-ul-Quran Glasgow</span>
+                            Serving the Glasgow community through worship, meaningful Islamic education, and vibrant community life — a welcoming space where faith, learning, and wellbeing grow together.
                         </p>
                         <div className="flex gap-4 pt-2">
                             <a href="#" className="bg-primary-700/50 p-2 rounded-full hover:bg-accent-400 hover:text-primary-900 transition-colors"><Facebook size={18} /></a>
@@ -57,11 +58,11 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={18} className="text-accent-400 shrink-0" />
-                                <span>07888 896065</span>
+                                <span>07365 522561</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-accent-400 shrink-0" />
-                                <span>ziaulquran.scot@gmail.com</span>
+                                <span>ziaulquran@outlook.com</span>
                             </li>
                         </ul>
                     </div>
