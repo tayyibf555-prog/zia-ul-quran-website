@@ -60,7 +60,7 @@ const Team = () => {
                                             src={member.image}
                                             alt={member.name}
                                             loading="lazy"
-                                            className="w-full h-full object-cover"
+                                            className={`w-full h-full ${member.name.includes('Mohsan') ? 'object-contain p-2' : 'object-cover'}`}
                                         />
                                     ) : (
                                         <User size={64} />
