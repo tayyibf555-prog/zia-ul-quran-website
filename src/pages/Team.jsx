@@ -54,7 +54,7 @@ const Team = () => {
                                 transition={{ delay: index * 0.1 }}
                                 className="bg-white rounded-2xl shadow-lg border border-neutral-100 overflow-hidden hover:shadow-xl transition-shadow duration-300"
                             >
-                                <div className="h-64 bg-neutral-200 flex items-center justify-center text-neutral-400">
+                                <div className={`h-64 flex items-center justify-center text-neutral-400 ${member.name.includes('Mohsan') ? 'bg-black' : 'bg-neutral-200'}`}>
                                     {member.image ? (
                                         <img
                                             src={member.image}
