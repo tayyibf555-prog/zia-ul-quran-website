@@ -104,7 +104,7 @@ const YoungExplorers = () => {
                     >
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-square bg-primary-900/20 group">
                             <img
-                                src="/education-poster.png"
+                                src="/young_explorers_bg.png"
                                 alt="Young Explorers Programme"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-95"
                             />
