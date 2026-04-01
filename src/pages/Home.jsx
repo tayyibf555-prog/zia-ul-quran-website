@@ -1,5 +1,6 @@
 import Hero from '../components/home/Hero'
 import PrayerTimes from '../components/home/PrayerTimes'
+import YoungExplorers from '../components/home/YoungExplorers'
 import About from '../components/home/About'
 import Services from '../components/home/Services'
 import WomensTafsir from '../components/home/WomensTafsir'
@@ -15,6 +16,7 @@ const Home = () => {
     return (
         <main>
             <Hero />
+            <YoungExplorers />
             <PrayerTimes />
             <About />
             <Services />

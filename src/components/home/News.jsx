@@ -9,13 +9,7 @@ const News = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const newsItems = [
-        {
-            date: 'January 24, 2026',
-            title: 'Ramadan 2026 Timetable',
-            excerpt: 'The blessed month is here. View and download the detailed Ramadan 1447AH timetable including Sehri and Iftar times for Glasgow. Stay on track with your Quran progress with our new Quran tracker.',
-            image: '/ramadan-poster.png',
-            link: '/ramadan'
-        },
+
         {
             date: 'January 24, 2026',
             title: 'Our Islamic Education Programme Registration Now Open',

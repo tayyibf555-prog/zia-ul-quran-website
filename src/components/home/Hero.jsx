@@ -67,15 +67,16 @@ const Hero = () => {
                         transition={{ delay: 2.5, duration: 0.8 }}
                         className="flex flex-col sm:flex-row gap-3 pt-2 md:pt-4 justify-center items-center"
                     >
-                        {/* Ramadan 2026 Button - Dark with pulsing arrow */}
-                        <Link
-                            to="/ramadan"
+                        {/* Young Explorers Button - Dark with pulsing arrow */}
+                        <NavHashLink
+                            smooth
+                            to="/#young-explorers"
                             className="bg-primary-900/60 backdrop-blur-md text-white border border-white/20 px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold text-sm md:text-base hover:bg-primary-900/80 hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2 group"
                         >
-                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-amber-400 animate-pulse group-hover:bg-amber-300"></span>
-                            Ramadan 2026
-                            <ChevronDown className="w-4 h-4 text-amber-400 animate-pulse ml-1 group-hover:translate-y-1 transition-transform" />
-                        </Link>
+                            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-accent-400 animate-pulse group-hover:bg-accent-300"></span>
+                            Young Explorers
+                            <ChevronDown className="w-4 h-4 text-accent-400 animate-pulse ml-1 group-hover:translate-y-1 transition-transform" />
+                        </NavHashLink>
                         {/* Prayer Times Button - White */}
                         <NavHashLink
                             smooth
