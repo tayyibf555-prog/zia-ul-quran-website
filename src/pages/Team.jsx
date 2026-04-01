@@ -19,7 +19,7 @@ const Team = () => {
             name: "Dr Mohsan Rabbani, MD",
             role: "Activities Lead",
             bio: "Dr Mohsan Rabbani brings specialised expertise to our youth and community programmes. With a Level 3 Award in Education and Training (AET), he is an Early Years Provision Strategist and Child Development specialist. He utilises his medical and educational background to design engaging, developmentally appropriate activities that nurture the growth and well-being of our younger community members. He is also a trustee of the Muslim Council of Scotland.",
-            image: "/dr-mohsan.jpg"
+            image: "/dr-mohsan-new.png"
         }
     ];
 
@@ -60,7 +60,7 @@ const Team = () => {
                                             src={member.image}
                                             alt={member.name}
                                             loading="lazy"
-                                            className={`w-full h-full ${member.name.includes('Mohsan') ? 'object-contain p-2' : 'object-cover'}`}
+                                            className={`w-full h-full object-cover ${member.name.includes('Mohsan') ? 'rounded-full scale-[0.85] shadow-lg border-2 border-neutral-100' : ''}`}
                                         />
                                     ) : (
                                         <User size={64} />
