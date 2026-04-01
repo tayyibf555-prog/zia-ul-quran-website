@@ -8,10 +8,11 @@ const YoungExplorers = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-        <section id="young-explorers" className="py-24 bg-neutral-50 relative overflow-hidden" ref={ref}>
+        <section id="young-explorers" className="py-24 bg-primary-900 relative overflow-hidden" ref={ref}>
             {/* Background Pattern */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-primary-900/5 mix-blend-overlay" style={{ backgroundImage: "url('/hero-pattern.jpg')", backgroundSize: 'cover' }}></div>
+                <div className="absolute inset-0 bg-[url('/hero-pattern.jpg')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-primary-900/95"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -28,44 +29,44 @@ const YoungExplorers = () => {
                             <span className="inline-block px-4 py-1.5 rounded-full bg-accent-500/10 text-accent-600 font-bold uppercase tracking-widest text-xs mb-4 border border-accent-500/20">
                                 Registration Open
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-900 mb-6 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
                                 Young Explorers Programme
                             </h2>
                             <h3 className="text-2xl font-display font-semibold text-gold-gradient italic mb-6">
                                 Faith, Learning & Joy Grow Together
                             </h3>
-                            <p className="text-lg text-neutral-600 leading-relaxed font-medium">
+                            <p className="text-lg text-white/90 leading-relaxed font-medium">
                                 A weekly programme for children aged 5–11, blending structured Islamic education with creative play and coordinated sport. Every Saturday 10:00 AM – 1:00 PM.
                             </p>
                         </div>
 
                         {/* Features List */}
                         <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary-100 p-3 rounded-2xl flex-shrink-0">
-                                    <BookOpen className="w-6 h-6 text-primary-700" />
+                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <div className="bg-white/10 p-3 rounded-2xl flex-shrink-0">
+                                    <BookOpen className="w-6 h-6 text-accent-400" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold text-primary-900 mb-2">Islamic Learning</h4>
-                                    <p className="text-neutral-600">Safar Academy curriculum, focusing on comprehensive and structured Islamic education for young minds.</p>
+                                    <h4 className="text-xl font-bold text-white mb-2">Islamic Learning</h4>
+                                    <p className="text-white/80">Safar Academy curriculum, focusing on comprehensive and structured Islamic education for young minds.</p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-4">
-                                <div className="bg-accent-100 p-3 rounded-2xl flex-shrink-0">
-                                    <Palette className="w-6 h-6 text-accent-700" />
+                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <div className="bg-white/10 p-3 rounded-2xl flex-shrink-0">
+                                    <Palette className="w-6 h-6 text-accent-400" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold text-primary-900 mb-2">Creative Play</h4>
-                                    <p className="text-neutral-600">Arts, crafts, and cognitive games encouraging teamwork and problem-solving skills.</p>
+                                    <h4 className="text-xl font-bold text-white mb-2">Creative Play</h4>
+                                    <p className="text-white/80">Arts, crafts, and cognitive games encouraging teamwork and problem-solving skills.</p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-4">
-                                <div className="bg-amber-100 p-3 rounded-2xl flex-shrink-0">
-                                    <Activity className="w-6 h-6 text-amber-700" />
+                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <div className="bg-white/10 p-3 rounded-2xl flex-shrink-0">
+                                    <Activity className="w-6 h-6 text-accent-400" />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold text-primary-900 mb-2">Sport & Movement</h4>
-                                    <p className="text-neutral-600">Coordinated activities including table tennis and team games supporting emotional regulation.</p>
+                                    <h4 className="text-xl font-bold text-white mb-2">Sport & Movement</h4>
+                                    <p className="text-white/80">Coordinated activities including table tennis and team games supporting emotional regulation.</p>
                                 </div>
                             </div>
                         </div>
@@ -81,14 +82,14 @@ const YoungExplorers = () => {
                                 href="https://ziaulquranweeklyclass.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-primary-900 text-white px-8 py-4 rounded-full font-bold hover:bg-primary-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 group"
+                                className="inline-flex items-center gap-3 bg-white text-primary-900 px-8 py-4 rounded-full font-bold hover:bg-neutral-100 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 group"
                             >
                                 Learn More
                                 <motion.span
                                     animate={{ x: [0, 5, 0] }}
                                     transition={{ duration: 1.5, repeat: Infinity }}
                                 >
-                                    <ArrowRight className="w-5 h-5 group-hover:text-accent-400 transition-colors" />
+                                    <ArrowRight className="w-5 h-5 group-hover:text-amber-500 transition-colors" />
                                 </motion.span>
                             </a>
                         </motion.div>
@@ -126,10 +127,10 @@ const YoungExplorers = () => {
                         <motion.div
                             animate={{ y: [-10, 10, -10] }}
                             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className="absolute -top-6 -right-6 bg-white p-6 rounded-full shadow-2xl border-4 border-neutral-50 flex flex-col items-center justify-center w-32 h-32"
+                            className="absolute -top-6 -right-6 bg-primary-900 p-6 rounded-full shadow-2xl border-4 border-primary-800 flex flex-col items-center justify-center w-32 h-32"
                         >
                             <span className="text-3xl font-bold text-gold-gradient mb-1">Ages</span>
-                            <span className="text-xl font-display font-bold text-primary-900">5-11</span>
+                            <span className="text-xl font-display font-bold text-white">5-11</span>
                         </motion.div>
                     </motion.div>
 
